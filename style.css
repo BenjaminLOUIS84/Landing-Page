@@ -1,0 +1,1052 @@
+/*  Pour reset les marges*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* wrapper  =   bloc contenant les réglages par défaut pour toute la page*/
+
+.wrapper {
+    background: radial-gradient(#8bc3f5, #1294b8);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* nav  =   bloc contenant: h2, fb,in,tw et a  */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.fb,
+.in,
+.tw {
+    width: 10%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+
+/* accueil  =   bloc contenant: h1, bloc, text, form-row,
+form-email, bouttonsubscribe, input et illustration */
+
+.accueil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 230px;
+    margin-bottom: 90px;
+    padding-top: 50px;
+}
+
+.bloc {
+    padding-right: 60px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.form-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#email {
+    background: white;
+    border: none;
+    border-radius: 50px;
+    color: grey;
+    padding: 20px 30px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 200px;
+}
+
+.boutonSubscribe {
+    background: #1294b8;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 20px;
+    margin: -124px;
+    transition: .5s ease-in-out;
+}
+
+/*  Pour ajouter un effet sur le bouton au passage de la souris*/
+
+.boutonSubscribe:hover {
+    background: #8788BA;
+    cursor: pointer;
+
+}
+
+.illustration {
+    width: 260%;
+    padding-right: 130px;
+    margin-right: 50px;
+    filter: grayscale(0%);
+}
+
+/* features =   bloc contenant: h3, text1, bloc3,
+h4, text2, ico, design, colors, solutions et text3 */
+
+.features {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+.text1 {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    color: gray;
+}
+
+.bloc3 {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.ico {
+
+    margin-bottom: 20px;
+}
+
+.design,
+.colors,
+.solutions {
+    background: radial-gradient(#8bc3f5, #1294b8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+}
+
+
+/*  Pour ajouter un effet décalage vers le haut au passage de la souris
+sur les divs design, colors et solutions*/
+
+.design:hover,
+.colors:hover,
+.solutions:hover {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-play-state: paused;
+    transition: .5s ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(5%);
+    }
+}
+
+.howItWork {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    padding-bottom: 200px;
+}
+
+/* defTeam   =   bloc contenant: h3 et text3 
+    team    =   bloc contenant: pcs1 et figure */
+
+.defTeam {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.text3 {
+    text-align: center;
+    color: gray;
+    margin-bottom: 100px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    align-items: initial;
+    gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+/*  Paramètres pour mettre les images et les icônes en ordre et pour zoomer*/
+
+.icoPhoto {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.icoPhoto:hover .ico3 {
+    opacity: 1;
+}
+
+.ico3 {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 40px;
+    gap: 15px;
+    position: absolute;
+    width: 25%;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.icoFb,
+.icoTw {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.icoSk {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.pcs1 {
+    width: 80%;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.pcs1:hover {
+    transform: scale(1.2);
+}
+
+
+figure {
+    justify-content: space-between;
+    width: 23%;
+}
+
+
+/* getStart   =   bloc contenant: h5, text4 et boutonGetStart */
+/*  Pour mettre une image fixe en arrière plan*/
+
+.getStart {
+    color: white;
+    background-image: url("images/parallax.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+h5 {
+    font-size: 2.5em;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.text4 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*  Paramètres du Bouton Get Started*/
+
+.boutonGetStart {
+    color: white;
+    border: 1px solid white;
+    background: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    padding: 10px 30px 10px 30px;
+    transition: .5s ease-in-out
+}
+
+.boutonGetStart:hover {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-play-state: paused;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+
+/* client   =   bloc contenant: logos et log */
+
+.client {
+    background: whitesmoke;
+    padding-top: 50px;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: whitesmoke;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.log {
+    width: 50%;
+    align-items: center;
+    opacity: 50%;
+}
+
+.log:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+/*  Pour mettre un filtre sur une image et enlever celui ci au passage de la souris*/
+
+
+img {
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+/* creative   =   bloc contenant: h3, text5, LearnMore, boutonLearnMore et crea */
+
+.creative {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 100px 100px 100px 0px;
+}
+
+.text5 {
+    color: gray;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inf,
+.inf1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inf1 {
+    padding-right: 200px;
+}
+
+.learnMore {
+    text-align: justify;
+}
+
+.boutonLearnMore {
+    color: white;
+    border: none;
+    background: #8788BA;
+    border-radius: 8px;
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 10px 30px 10px 30px;
+    transition: .5s ease-in-out;
+}
+
+.boutonLearnMore:hover {
+    background: #8bc3f5;
+    cursor: pointer;
+}
+
+/*  Pour empécher le filtre de s'appliquer filter: grayscale(0%)*/
+
+.crea {
+    width: 170%;
+    filter: grayscale(0%);
+    justify-content: center;
+    align-items: center;
+}
+
+/* price   =   bloc contenant: h3, text1, blocPrice,
+(starter-advanced-professional),px, services, tbody,
+ h4, h6, h7, text6 et boutonJoin */
+
+.price {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.blocPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.starter,
+.advanced,
+.professional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px grey;
+    gap: 5px;
+    margin: 10px;
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+
+.yes,
+.no {
+    width: 10%;
+}
+
+.px {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section .price tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+tbody {
+    text-align: start;
+}
+
+h6 {
+    color: #1294b8;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.px h2 {
+    color: #1294b8;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.text6 {
+    color: gray;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 50px;
+}
+
+
+.boutonJoin {
+    color: #8788BA;
+    border: 1px solid #8788BA;
+    background: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    padding: 10px 80px 10px 80px;
+    transition: .5s ease-in-out;
+}
+
+/* Pour animer et améliorer le design des 3 blocs 
+contenant la description des différentes formules proposée*/
+
+.boutonJoin:hover {
+    background: #8788BA;
+    color: white;
+    cursor: pointer;
+}
+
+.starter:hover,
+.advanced:hover,
+.professional:hover {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-play-state: paused;
+}
+
+/* keyframes est un outils trop puissant pour cette animation mais ca fonctionne*/
+@keyframes move {
+    0% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(5%);
+    }
+}
+
+/* blog   =   bloc contenant: h3, text1, articles,
+blocArt, h', texte5, photo et boutonReading */
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.man,
+.hour {
+    width: 10%;
+}
+
+.blocArt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+}
+
+.photo {
+    border-radius: 10px;
+    width: 90%;
+    filter: grayscale(0%);
+    padding-bottom: 20px;
+}
+
+/*  Pour créer un effet d'assombrissemen
+ avec informations sur les photos*/
+
+.lien-conteneur-photo {
+    position: relative;
+}
+
+.photo-hover {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    right: 50px;
+    bottom: 35px;
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 10px;
+    background: black;
+    /* Equivaut à background-color: rgba(0, 0, 0, 0.5); */
+    opacity: 40%;
+    display: none;
+    transition: .5s ease-in-out;
+}
+
+h8 {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.inf {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+section .blog tr {
+    display: flex;
+    flex-direction: row;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+/*Pour activer l'effet au passage de la souris*/
+.lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+}
+
+
+.boutonReading {
+    text-align: left;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 80px;
+
+}
+
+.boutonReading:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+/* info   =   bloc contenant: reseaux, acces,
+face-twit-linked-google et text4  */
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    gap: 30px;
+}
+
+.face,
+.twit,
+.linked,
+.google {
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.google,
+.linked {
+    width: 4%;
+}
+
+.acces {
+    opacity: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.boutonScroll {
+    width: 3%;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: fixed;
+    top: 580px;
+    left: 1230px;
+    transition: .5s ease-in-out;
+}
+
+.boutonScroll:hover {
+    cursor: pointer;
+}
+
+/*INSPECTER*/
+@media only screen and (max-width: 1115px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    a {
+        font-size: 0.7em;
+        padding: 3px;
+    }
+
+    .illustration {
+        width: 300%;
+    }
+
+    .bloc3 {
+        margin: 40px 20px 40px 20px;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    .design,
+    .colors,
+    .solutions {
+        margin: 10px;
+    }
+
+    .inf1 {
+        padding-right: 100px;
+    }
+
+    .photo-hover {
+        top: 2px;
+        left: 3px;
+        right: 36px;
+        bottom: 25px;
+    }
+
+    .linked,
+    .google {
+        width: 5%;
+    }
+
+    .boutonScroll {
+        position: fixed;
+        top: 560px;
+        left: 980px;
+        transition: .5s ease-in-out;
+    }
+
+}
+
+
+
+/*TABLETTE*/
+@media only screen and (max-width:996px) {
+    .form-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .boutonScroll {
+        position: fixed;
+        top: 700px;
+        left: 1500px;
+        transition: .5s ease-in-out;
+    }
+}
+
+/*TELEPHONE//////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:630px) {
+
+    .wrapper {
+        width: 162%;
+        margin: auto;
+    }
+
+    /*////////////////////////////ACCUEIL///////////////////////////*/
+
+    .form-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    a {
+        font-size: 0.5em;
+        padding: 1px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .accueil {
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+    }
+
+    .bloc {
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 120px;
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .boutonSubscribe {
+        padding: 15px 20px;
+        margin: -115px;
+        transition: .5s ease-in-out;
+    }
+
+    /*////////////////////////////PRODUCTS FEATURES///////////////////////////*/
+
+    .bloc3 {
+        margin: 0px 0px 40px 0px;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .bloc3 h4 {
+        padding-bottom: 10px;
+    }
+
+    .design,
+    .colors,
+    .solutions {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .design:hover,
+    .colors:hover,
+    .solutions:hover {
+        animation:none;
+    }
+
+    /*////////////////////////////TEAM///////////////////////////*/
+
+    .team h3 {
+        font-size: 1em;
+    }
+
+    .team {
+        gap: 0px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .ico3 {
+        left: 20px;
+        padding-top: 30px;
+    }
+
+    /*////////////////////////////WORK///////////////////////////*/
+
+    .howItWork {
+        padding-bottom: 50px;
+    }
+
+    /*////////////////////////////GET START///////////////////////////*/
+
+    .getStart h5 {
+        font-size: 2.2em;
+    }
+
+    .text4 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /*////////////////////////////CLIENT///////////////////////////*/
+
+    #logos {
+        padding-bottom: 50px;
+    }
+
+    /*////////////////////////////PRICE///////////////////////////*/
+
+    .blocPrice {
+        flex-direction: column;
+    }
+
+    .blocPrice:hover {
+        animation: none;
+    }
+
+    /*////////////////////////////BLOG///////////////////////////*/
+
+    .creative {
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .articles {
+        position: relative;
+        overflow: auto;
+        display: flex;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-direction: row;
+        padding-bottom: 90px;
+    }
+
+    .blocArt {
+        position: sticky;
+        object-fit: cover;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .blocArt {
+        align-items: center;
+        text-align: center;
+    }
+
+    .text5 {
+        text-align: center;
+    }
+
+    .infos {
+        justify-content: left;
+
+    }
+
+    .inf1 {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .crea {
+        display: none;
+    }
+
+    .learnMore {
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    .photo-hover {
+        left: 40px;
+    }
+
+    h4 {
+        font-size: 1.7em;
+    }
+
+    /*////////////////////////////FOOTER///////////////////////////*/
+
+    .reseaux {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .text3 {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+
+    .acces {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 0.5em;
+    }
+
+    .linked,
+    .google {
+        width: 9%;
+    }
+
+    #info {
+        padding-bottom: 0px;
+    }
+
+}

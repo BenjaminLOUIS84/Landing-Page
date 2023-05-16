@@ -754,7 +754,7 @@ face-twit-linked-google et text4  */
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 .boutonScroll:hover {

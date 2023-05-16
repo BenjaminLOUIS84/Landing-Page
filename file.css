@@ -1,0 +1,58 @@
+/*  Pour reset les marges*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* wrapper  =   bloc contenant les réglages par défaut pour toute la page*/
+
+.wrapper {
+    background: radial-gradient(#8bc3f5, #1294b8);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav  =   bloc contenant: h1, nav, menu et a  */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    height: 500px;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+@media only screen and (max-width:430px) {
+
+
+
+
+
+}

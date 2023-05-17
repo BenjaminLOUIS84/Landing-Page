@@ -189,9 +189,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-.design,
-.colors,
-.solutions {
+.feat {
     background: radial-gradient(#8bc3f5, #1294b8);
     color: white;
     border: none;
@@ -208,9 +206,7 @@ h4 {
 /*  Pour ajouter un effet décalage vers le haut au passage de la souris
 sur les divs design, colors et solutions*/
 
-.design:hover,
-.colors:hover,
-.solutions:hover {
+.feat:hover {
     animation-name: move;
     animation-duration: 1s;
     animation-iteration-count: initial;
@@ -1205,17 +1201,33 @@ html {
         padding-bottom: 10px;
     }
 
-    .design,
-    .colors,
-    .solutions {
+    .feat {
         padding: 10px;
         margin: 10px;
     }
 
-    .design:hover,
-    .colors:hover,
-    .solutions:hover {
+    .feat:hover {
         animation: none;
+    }
+
+    .bloc3 {
+        position: relative;
+        overflow: auto;
+        display: flex;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-direction: row;
+    }
+
+    .feat {
+        position: sticky;
+        object-fit: cover;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+
+        /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
+        width: 100%;
+        max-width: 1000px;
     }
 
     /*////////////////////////////TEAM///////////////////////////*/
@@ -1264,7 +1276,7 @@ html {
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 50%;
         max-width: 1000px;
-        
+
     }
 
     /*////////////////////////////WORK///////////////////////////*/

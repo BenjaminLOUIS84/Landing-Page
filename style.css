@@ -132,6 +132,11 @@ h1 {
 
 }
 
+.accueil figure {
+    justify-content: space-between;
+    width: 23%;
+}
+
 .illustration {
     width: 260%;
     padding-right: 130px;
@@ -305,7 +310,7 @@ sur les divs design, colors et solutions*/
 }
 
 
-figure {
+.team figure {
     justify-content: space-between;
     width: 23%;
 }
@@ -410,6 +415,11 @@ img:hover {
 }
 
 /* creative   =   bloc contenant: h3, text5, LearnMore, boutonLearnMore et crea */
+
+.creative figure {
+    justify-content: space-between;
+    width: 23%;
+}
 
 .creative {
     display: flex;
@@ -1213,7 +1223,7 @@ html {
         font-size: 1em;
     }
 
-    
+
     .team {
         gap: 0px;
         justify-content: center;
@@ -1246,6 +1256,23 @@ html {
 
     #logos {
         padding-bottom: 50px;
+    }
+
+    #logos {
+        position: relative;
+        overflow: auto;
+        display: flex;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-direction: row;
+
+    }
+
+    .lg {
+        position: sticky;
+        object-fit: cover;
+        flex-shrink: 0;
+        scroll-snap-align: start;
     }
 
     /*////////////////////////////PRICE///////////////////////////*/
@@ -1297,6 +1324,11 @@ html {
 
     }
 
+
+    .inf {
+        font-size: 0.5em;
+    }
+
     .inf1 {
         padding-right: 100px;
         padding-left: 100px;
@@ -1313,6 +1345,14 @@ html {
 
     a {
         font-size: 1.5em;
+    }
+
+    .lien-conteneur-photo {
+        width: 50%;
+    }
+
+    .photo {
+        width: 50%;
     }
 
     .photo-hover {

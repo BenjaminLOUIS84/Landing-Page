@@ -1097,7 +1097,7 @@ html {
     }
 
     .text {
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     h2 {
@@ -1153,6 +1153,8 @@ html {
         font-size: 2em;
         text-align: center;
         color: white;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .illustration {
@@ -1161,7 +1163,7 @@ html {
 
     #email {
         padding-right: 140px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     .boutonSubscribe {

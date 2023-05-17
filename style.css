@@ -1271,6 +1271,11 @@ html {
         font-size: 2.2em;
     }
 
+    .getStart {
+        background-size: contain;
+        background-position: top;
+    }
+
     .text4 {
         padding-left: 30px;
         padding-right: 30px;

@@ -1334,6 +1334,7 @@ html {
         scroll-snap-type: x mandatory;
         flex-direction: row;
         padding-bottom: 90px;
+        margin-top: 50px;
         margin-left: 0px;
         gap: 0px;
     }
@@ -1343,6 +1344,10 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
+
+        /* Pour centrer la première image du caroussel*/
+        width: 100%; 
+        max-width: 1000px; }
     }
 
 

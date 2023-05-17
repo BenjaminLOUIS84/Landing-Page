@@ -1217,6 +1217,8 @@ html {
         justify-content: left;
         scroll-snap-type: x mandatory;
         flex-direction: row;
+        margin-left: 20px;
+        margin-right: -5px;
     }
 
     .feat {
@@ -1226,7 +1228,7 @@ html {
         scroll-snap-align: start;
 
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
-        width: 100%;
+        width: 110%;
         max-width: 1000px;
     }
 

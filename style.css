@@ -1235,6 +1235,10 @@ html {
         padding-bottom: 20px;
     }
 
+    .team figure {
+        width: 230px;
+    }
+
     .ico3 {
         left: 20px;
         padding-top: 30px;
@@ -1242,7 +1246,7 @@ html {
 
     /* Générer un caroussel glissement AU DOIGT (automatique) */
 
-    /* .staff {
+    .staff {
         position: relative;
         overflow: auto;
         display: flex;
@@ -1256,8 +1260,11 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
+        /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
+        width: 50%;
+        max-width: 1000px;
         
-    } */
+    }
 
     /*////////////////////////////WORK///////////////////////////*/
 

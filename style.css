@@ -1305,7 +1305,7 @@ html {
     }
 
     .log {
-        width: 90%; 
+        width: 90%;
     }
 
     /*////////////////////////////PRICE///////////////////////////*/
@@ -1351,8 +1351,8 @@ html {
         scroll-snap-align: start;
 
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
-        width: 100%; 
-        max-width: 1000px; 
+        width: 100%;
+        max-width: 1000px;
     }
 
 
@@ -1399,7 +1399,7 @@ html {
     }
 
     .photo {
-        width: 100%;
+        width: 320px;
     }
 
     .inf {
@@ -1412,8 +1412,9 @@ html {
         left: 0px;
         top: 0px;
         bottom: 30px;
-        right: 0px;    
+        right: 0px;
     }
+
     h4 {
         font-size: 1.7em;
     }

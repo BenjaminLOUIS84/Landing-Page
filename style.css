@@ -317,7 +317,7 @@ sur les divs design, colors et solutions*/
 
 .team figure {
     justify-content: space-between;
-    width: 23%;
+    width: 25%;
 }
 
 
@@ -1300,7 +1300,7 @@ html {
     }
 
     .log {
-        width: 100%;
+        width: 90%;
     }
 
     /*////////////////////////////PRICE///////////////////////////*/

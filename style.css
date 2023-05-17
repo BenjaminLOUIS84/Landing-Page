@@ -1260,6 +1260,7 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
+
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 50%;
         max-width: 1000px;
@@ -1307,12 +1308,12 @@ html {
         scroll-snap-align: start;
 
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
-        width: 100%;
+        width: 50%;
         max-width: 1000px;
     }
 
     .log {
-        width: 90%;
+        width: 70%;
     }
 
     /*////////////////////////////PRICE///////////////////////////*/

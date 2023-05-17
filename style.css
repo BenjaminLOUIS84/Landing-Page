@@ -261,6 +261,11 @@ sur les divs design, colors et solutions*/
     padding-bottom: 90px;
 }
 
+.staff {
+    display: flex;
+    flex-direction: row;
+}
+
 /*  Paramètres pour mettre les images et les icônes en ordre et pour zoomer*/
 
 .icoPhoto {
@@ -1235,6 +1240,24 @@ html {
         padding-top: 30px;
     }
 
+    /* Générer un caroussel glissement automatique */
+
+    /* .staff {
+        position: relative;
+        overflow: auto;
+        display: flex;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-direction: row;
+    }
+
+    .member {
+        position: sticky;
+        object-fit: cover;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    } */
+
     /*////////////////////////////WORK///////////////////////////*/
 
     .howItWork {
@@ -1258,6 +1281,8 @@ html {
         padding-bottom: 50px;
     }
 
+    /* Générer un caroussel glissement automatique */
+
     #logos {
         position: relative;
         overflow: auto;
@@ -1265,7 +1290,6 @@ html {
         justify-content: left;
         scroll-snap-type: x mandatory;
         flex-direction: row;
-
     }
 
     .lg {
@@ -1273,6 +1297,10 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
+    }
+
+    .log {
+        width: 100%;
     }
 
     /*////////////////////////////PRICE///////////////////////////*/
@@ -1292,6 +1320,12 @@ html {
         padding: 0px 0px 0px 0px;
     }
 
+    .blocArt h4 {
+        font-size: 1.3em;
+    }
+
+    /* Générer un caroussel glissement au doigt */
+
     .articles {
         position: relative;
         overflow: auto;
@@ -1300,6 +1334,8 @@ html {
         scroll-snap-type: x mandatory;
         flex-direction: row;
         padding-bottom: 90px;
+        margin-left: 0px;
+        gap: 0px;
     }
 
     .blocArt {
@@ -1308,6 +1344,7 @@ html {
         flex-shrink: 0;
         scroll-snap-align: start;
     }
+
 
     .blocArt {
         align-items: center;
@@ -1352,7 +1389,7 @@ html {
     }
 
     .photo {
-        width: 50%;
+        width: 80%;
     }
 
     .photo-hover {

@@ -1293,7 +1293,7 @@ html {
     }
 
     .infos {
-        justify-content: left;
+        justify-content: center;
 
     }
 
@@ -1308,6 +1308,7 @@ html {
 
     .learnMore {
         text-align: center;
+        width: 90%;
     }
 
     a {

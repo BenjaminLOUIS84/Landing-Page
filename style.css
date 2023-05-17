@@ -1399,13 +1399,21 @@ html {
     }
 
     .photo {
-        width: 80%;
+        width: 100%;
+    }
+
+    .inf {
+        font-size: 0.4em;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
     .photo-hover {
-        left: 40px;
+        left: 0px;
+        top: 0px;
+        bottom: 30px;
+        right: 0px;    
     }
-
     h4 {
         font-size: 1.7em;
     }

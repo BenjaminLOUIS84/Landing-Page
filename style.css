@@ -24,7 +24,7 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 30px;
 }
@@ -1078,15 +1078,25 @@ html {
 @media only screen and (max-width:430px) {
 
     .wrapper {
-        width: 162%;
+        width: 100%;
         margin: auto;
     }
 
     /*////////////////////////////ACCUEIL///////////////////////////*/
 
+    .accueil {
+        width: 200px;
+    }
+
     .form-email {
         flex-direction: column;
         gap: 0;
+    }
+
+    .fb,
+    .in,
+    .tw {
+        width: 15%;
     }
 
     a {

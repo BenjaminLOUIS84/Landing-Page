@@ -1240,7 +1240,7 @@ html {
         padding-top: 30px;
     }
 
-    /* Générer un caroussel glissement automatique */
+    /* Générer un caroussel glissement AU DOIGT (automatique) */
 
     /* .staff {
         position: relative;
@@ -1256,6 +1256,7 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
+        
     } */
 
     /*////////////////////////////WORK///////////////////////////*/
@@ -1281,7 +1282,7 @@ html {
         padding-bottom: 50px;
     }
 
-    /* Générer un caroussel glissement automatique */
+    /* Générer un caroussel glissement AU DOIGT (automatique) */
 
     #logos {
         position: relative;
@@ -1297,7 +1298,7 @@ html {
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
-        
+
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 100%;
         max-width: 1000px;
@@ -1328,7 +1329,7 @@ html {
         font-size: 1.3em;
     }
 
-    /* Générer un caroussel glissement au doigt */
+    /* Générer un caroussel glissement AU DOIGT (automatique) */
 
     .articles {
         position: relative;

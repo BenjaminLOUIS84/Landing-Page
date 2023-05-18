@@ -1260,7 +1260,7 @@ face-twit-linked-google et text4  */
         object-fit: cover;
         flex-shrink: 0;
         scroll-snap-align: start;
-        
+
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 112%;
         max-width: 1000px;
@@ -1293,7 +1293,7 @@ face-twit-linked-google et text4  */
     }
 
     .pcs1 {
-        width: 70%;
+        width: 80%;
     }
 
     .ico3 {

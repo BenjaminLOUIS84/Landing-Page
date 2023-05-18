@@ -1472,7 +1472,7 @@ face-twit-linked-google et text4  */
     }
 
     .photo {
-        width: 320px;
+        width: 100%;
     }
 
     .inf {

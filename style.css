@@ -510,9 +510,7 @@ img:hover {
     padding-top: 40px;
 }
 
-.starter,
-.advanced,
-.professional {
+.pack {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -588,9 +586,7 @@ contenant la description des différentes formules proposée*/
     cursor: pointer;
 }
 
-.starter:hover,
-.advanced:hover,
-.professional:hover {
+.pack:hover {
     animation-name: move;
     animation-duration: 1s;
     animation-iteration-count: initial;
@@ -1355,12 +1351,31 @@ html {
 
     /*////////////////////////////PRICE///////////////////////////*/
 
+    /* Générer un caroussel glissement AU DOIGT (automatique) */
+
     .blocPrice {
-        flex-direction: column;
+        position: relative;
+        overflow: auto;
+        display: flex;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-direction: row;
+        width: 360px;
     }
 
     .blocPrice:hover {
         animation: none;
+    }
+
+    .pack {
+        position: sticky;
+        object-fit: cover;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+
+        /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
+        width: 100%;
+        max-width: 1000px;
     }
 
     /*////////////////////////////BLOG///////////////////////////*/
@@ -1416,8 +1431,8 @@ html {
         border-radius: 10px;
         border: 1px solid black;
         box-shadow: 0px 10px 10px rgb(0, 0, 0);
-        animation: appear 1s;
-        transition: ease-in-out 0.5s;
+        /* animation: appear 1s;
+        transition: ease-in-out 0.5s; */
     }
 
 

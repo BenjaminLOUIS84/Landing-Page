@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Pour rendre tous les liens scrollables*/
 
 html {
@@ -1084,7 +1085,7 @@ face-twit-linked-google et text4  */
 /*TELEPHONE//////////////////////////////////////////////////////*/
 
 @media (min-width: 0) and (max-width: 768px) {
-    
+
     .wrapper {
         width: 100%;
         margin: auto;
@@ -1102,6 +1103,18 @@ face-twit-linked-google et text4  */
             transform: scale(1)
         }
 
+    }
+
+    /* Animation Scroller les caroussels automatiquement*/
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 7));
+        }
     }
 
     /*////////////////////////////ACCUEIL///////////////////////////*/
@@ -1230,6 +1243,8 @@ face-twit-linked-google et text4  */
         animation: none;
     }
 
+    /* Générer un caroussel glissement AUTO*/
+
     .bloc3 {
         position: relative;
         overflow: auto;
@@ -1249,6 +1264,9 @@ face-twit-linked-google et text4  */
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 112%;
         max-width: 1000px;
+
+        /* Pour scroller auto*/
+        animation: scroll 20s linear infinite;
     }
 
     /*////////////////////////////TEAM///////////////////////////*/
@@ -1274,12 +1292,16 @@ face-twit-linked-google et text4  */
         width: 230px;
     }
 
+    .pcs1 {
+        width: 70%;
+    }
+
     .ico3 {
         left: 20px;
         padding-top: 30px;
     }
 
-    /* Générer un caroussel glissement AU DOIGT (automatique) */
+    /* Générer un caroussel glissement AU DOIGT*/
 
     .staff {
         position: relative;
@@ -1299,7 +1321,6 @@ face-twit-linked-google et text4  */
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 50%;
         max-width: 1000px;
-
     }
 
     /*////////////////////////////WORK///////////////////////////*/
@@ -1325,7 +1346,7 @@ face-twit-linked-google et text4  */
         padding-bottom: 50px;
     }
 
-    /* Générer un caroussel glissement AU DOIGT (automatique) */
+    /* Générer un caroussel glissement AUTO*/
 
     #logos {
         position: relative;
@@ -1345,6 +1366,9 @@ face-twit-linked-google et text4  */
         /* Pour centrer la première image du caroussel et gérer l'espace entre les images*/
         width: 50%;
         max-width: 1000px;
+
+        /* Pour scroller auto*/
+        animation: scroll 20s linear infinite;
     }
 
     .log {
@@ -1353,7 +1377,7 @@ face-twit-linked-google et text4  */
 
     /*////////////////////////////PRICE///////////////////////////*/
 
-    /* Générer un caroussel glissement AU DOIGT (automatique) */
+    /* Générer un caroussel glissement AUTO*/
 
     .blocPrice {
         position: relative;

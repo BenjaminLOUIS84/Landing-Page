@@ -773,8 +773,11 @@ html {
     cursor: pointer;
 }
 
-/*INSPECTER*/
-@media only screen and (max-width: 1115px) {
+/*///////////////////////////////////////RESPONSIVE/////////////////////////////////////////*/
+
+
+/*////////////////INSPECTER - BUREAU - PAGE WEB///////////////////*/
+@media only screen and (max-width: 1196px) {
 
     h1 {
         font-size: 2.5em;
@@ -828,18 +831,20 @@ html {
         transition: .5s ease-in-out;
     }
 
-    header,
-    footer {
-        padding: 20px 20px;
-    }
-
-
 }
 
 
+/*TABLETTE//////////////////////////////////////////////////////*/
 
-/*TABLETTE*/
-@media only screen and (max-width:996px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .wrapper {
+        width: 162%;
+        margin: auto;
+    }
+
+    /*////////////////////////////ACCUEIL///////////////////////////*/
+
     .form-email {
         flex-direction: column;
         gap: 0;
@@ -850,36 +855,6 @@ html {
         top: 700px;
         left: 1500px;
         transition: .5s ease-in-out;
-    }
-
-    header,
-    footer {
-        padding: 20px 20px;
-    }
-
-}
-
-
-/*TABLETTE//////////////////////////////////////////////////////*/
-
-@media only screen and (max-width:630px) {
-
-    .wrapper {
-        width: 162%;
-        margin: auto;
-    }
-
-    header,
-    footer {
-        padding: 20px 20px;
-    }
-
-
-    /*////////////////////////////ACCUEIL///////////////////////////*/
-
-    .form-email {
-        flex-direction: column;
-        gap: 0;
     }
 
     a {
@@ -1108,7 +1083,7 @@ html {
 
 /*TELEPHONE//////////////////////////////////////////////////////*/
 
-@media only screen and (max-width:430px) {
+@media (min-width: 0) and (max-width: 768px) {
 
     .wrapper {
         width: 100%;
@@ -1136,7 +1111,7 @@ html {
     }
 
     .bloc {
-        margin-left: 225px;
+        margin-left: 520px;
     }
 
     .form-email {
@@ -1544,11 +1519,23 @@ html {
         padding-bottom: 0px;
     }
 
-    /*Pour stabiliser l'ecran */
+}
 
-    header,
-    footer {
-        padding: 0px 20px;
+/*///////////////////////////NORMES///////////////////////////*/
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+    h1 {
+        font-size: 9vw;
+        padding: 2vh 0;
     }
 
+    h2 {
+        font-size: 7vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
 }

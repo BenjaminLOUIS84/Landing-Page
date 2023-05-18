@@ -255,6 +255,7 @@ sur les divs design, colors et solutions*/
     gap: 10px;
     justify-content: space-between;
     padding-bottom: 90px;
+    padding-left: 200px;
 }
 
 .staff {
@@ -314,9 +315,11 @@ sur les divs design, colors et solutions*/
 .team figure {
     justify-content: space-between;
     width: 225px;
-    
 }
 
+.team h3 {
+    font-size: 1.6em;
+}
 
 /* getStart   =   bloc contenant: h5, text4 et boutonGetStart */
 /*  Pour mettre une image fixe en arrière plan*/
@@ -796,14 +799,16 @@ html {
         font-size: 1.1em;
     }
 
-    .design,
-    .colors,
-    .solutions {
+    .feat {
         margin: 10px;
     }
 
     .inf1 {
         padding-right: 100px;
+    }
+
+    .team {
+        padding-left: 70px;
     }
 
     .photo-hover {
@@ -1248,6 +1253,7 @@ html {
         gap: 0px;
         justify-content: center;
         padding-bottom: 20px;
+        padding-left: 0px;
     }
 
     .team figure {

@@ -1092,6 +1092,12 @@ face-twit-linked-google et text4  */
         line-height: 1.5;
     }
 
+    /* Desactiver cette fonction pour que le menu burger fonctionne*/
+
+    html {
+        scroll-behavior: unset;
+    }
+
     /* Animation Faire apparaitre certains éléments Zoom*/
 
     @keyframes appear {
@@ -1107,7 +1113,7 @@ face-twit-linked-google et text4  */
 
     /* Animation Scroller les caroussels automatiquement*/
 
-    /* @keyframes scroll {
+    @keyframes scroll {
         0% {
             transform: translateX(0);
         }
@@ -1115,7 +1121,7 @@ face-twit-linked-google et text4  */
         100% {
             transform: translateX(calc(-250px * 5));
         }
-    } */
+    }
 
     /*////////////////////////////ACCUEIL///////////////////////////*/
 
@@ -1265,8 +1271,8 @@ face-twit-linked-google et text4  */
         width: 112%;
         max-width: 1000px;
 
-        /* Pour scroller auto
-        animation: scroll 20s linear infinite; */
+        /*Pour scroller auto*/
+        animation: scroll 20s linear infinite;
     }
 
     /*////////////////////////////TEAM///////////////////////////*/
@@ -1367,8 +1373,8 @@ face-twit-linked-google et text4  */
         width: 50%;
         max-width: 1000px;
 
-        /* Pour scroller auto
-        animation: scroll 20s linear infinite; */
+        /*Pour scroller auto*/
+        animation: scroll 20s linear infinite;
     }
 
     .log {

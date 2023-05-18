@@ -1100,6 +1100,19 @@ html {
         line-height: 1.5;
     }
 
+    /* Animation Faire apparaitre certains éléments Zoom*/
+
+    @keyframes appear {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+
+    }
+
     /*////////////////////////////ACCUEIL///////////////////////////*/
 
     .accueil {
@@ -1146,6 +1159,9 @@ html {
         border-radius: 10px;
         box-shadow: 0px 10px 10px rgb(0, 0, 0);
 
+        /*Faire apparaitre cet élément*/
+        animation: appear 1s;
+        transition: ease-in-out 0.5s;
     }
 
     /*////////////////////////////MENU BURGER///////////////////////////*/
@@ -1397,7 +1413,11 @@ html {
 
     .infos {
         justify-content: center;
-
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0px 10px 10px rgb(0, 0, 0);
+        animation: appear 1s;
+        transition: ease-in-out 0.5s;
     }
 
 
@@ -1406,12 +1426,13 @@ html {
     }
 
     .inf1 {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
 
     .crea {
         display: none;
+
     }
 
     .learnMore {

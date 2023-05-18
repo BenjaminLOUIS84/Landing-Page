@@ -1378,6 +1378,11 @@ html {
         max-width: 1000px;
     }
 
+    .boutonJoin {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     /*////////////////////////////BLOG///////////////////////////*/
 
     .creative {

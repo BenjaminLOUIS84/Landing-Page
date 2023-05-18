@@ -1113,7 +1113,7 @@ face-twit-linked-google et text4  */
         }
 
         100% {
-            transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 5));
         }
     }
 

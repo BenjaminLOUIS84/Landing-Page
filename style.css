@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Pour rendre tous les liens scrollables*/
 
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* wrapper  =   bloc contenant les réglages par défaut pour toute la page*/
@@ -763,10 +767,6 @@ face-twit-linked-google et text4  */
     top: 580px;
     left: 1230px;
     transition: .5s ease-in-out;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .boutonScroll:hover {

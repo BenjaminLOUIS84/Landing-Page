@@ -454,6 +454,10 @@ img:hover {
     justify-content: space-between;
 }
 
+#info a {
+    font-size: 1em;
+}
+
 .inf,
 .inf1 {
     display: flex;
